@@ -1,7 +1,0 @@
-default:
-    - 'jshint'
-    - 'concat'
-    - 'uglify'
-    - 'cssmin'
-    - 'min'
-    - 'plato'

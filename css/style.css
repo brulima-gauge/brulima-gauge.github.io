@@ -21,6 +21,13 @@ body {
   background: rgb(255, 42, 79);
   color: white;
 }
+iframe {
+  width: 100%;
+  height: 600px;
+}
+#div-enviar, #div-received-messages {
+  width: 49%;
+}
 a:link {
 	text-decoration: none;
 }
