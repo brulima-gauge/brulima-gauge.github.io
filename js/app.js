@@ -9,7 +9,7 @@
     var receiveMessage = function (event) {
         var divReceive = document.getElementById("div-received-messages");
         var p = "<p>" + event.data + "</p>";
-        divReceive.appendElement(p);
+        divReceive.appendChild(p);
     };
 
     var btn = document.getElementById("btn-send");
