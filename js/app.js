@@ -7,8 +7,11 @@
     };
 
     var receiveMessage = function (event) {
+        if (event.origin !== "https://brulima.github.io") return;
         var divReceive = document.getElementById("div-received-messages");
-        var p = "<p>" + event.data + "</p>";
+        var conteudoNovo = document.createTextNode(event.data); 
+        var p = document.createElement("p");
+        p.appendChild(conteudoNovo);
         divReceive.appendChild(p);
     };
 
